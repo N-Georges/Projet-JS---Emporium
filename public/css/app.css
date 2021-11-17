@@ -6292,10 +6292,10 @@ header nav ul .dark .darkMode {
   height: 2px;
 }
 
-.product .container {
+.recentsProduct .container {
   width: 100%;
 }
-.product .container .sale {
+.recentsProduct .container .sale {
   position: absolute;
   left: 10%;
   display: flex;
@@ -6308,7 +6308,7 @@ header nav ul .dark .darkMode {
   font-size: 10px;
   color: #fff;
 }
-.product .container .content {
+.recentsProduct .container .content {
   position: relative;
   margin-top: 20px;
   display: flex;
@@ -6316,16 +6316,16 @@ header nav ul .dark .darkMode {
   align-items: center;
   font-weight: 600;
 }
-.product .container .content span:nth-of-type(2) {
+.recentsProduct .container .content span:nth-of-type(2) {
   color: #DD4545;
   font-size: 12px;
 }
-.product .container .content .ancienPrix {
+.recentsProduct .container .content .ancienPrix {
   color: #6C757D;
   margin-right: 3px;
   text-decoration: line-through;
 }
-.product .container .card {
+.recentsProduct .container .card {
   height: 250px;
   width: 330px;
   border: none;
@@ -6335,72 +6335,96 @@ header nav ul .dark .darkMode {
   margin-right: 10px;
   cursor: pointer;
 }
-.product .container .setup {
+.recentsProduct .container .setup {
   border-radius: 5px;
 }
-.product .container .row {
+.recentsProduct .container .row {
   margin: 50px 0px;
   display: flex;
   justify-content: center;
 }
-.product .container .row .title {
+.recentsProduct .container .row .title {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
 }
-.product .container .row .cardLSofa .luxurySofa {
+.recentsProduct .container .row .cardLSofa .luxurySofa {
   background: url(../img/products_mini/product-luxury-sofa.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardGloves .gloves {
+.recentsProduct .container .row .cardGloves .gloves {
   background: url(../img/products_mini/product-gloves.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardBowl .bowl {
+.recentsProduct .container .row .cardBowl .bowl {
   background: url(../img/products_mini/product-cups.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardBag .Bag {
+.recentsProduct .container .row .cardBag .Bag {
   background: url(../img/products_mini/product-bag.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardTshirt .Tshirt {
+.recentsProduct .container .row .cardTshirt .Tshirt {
   background: url(../img/products_mini/product-tshirt.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardSet .set {
+.recentsProduct .container .row .cardSet .set {
   background: url(../img/products_mini/product-plates.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardMSofa .Sofa {
+.recentsProduct .container .row .cardMSofa .Sofa {
   background: url(../img/products_mini/product-modern-sofa.jpg);
   background-size: cover;
   background-position: bottom;
   height: 100%;
 }
-.product .container .row .cardBed .bed {
+.recentsProduct .container .row .cardBed .bed {
   background: url(../img/products_mini/product-bed.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.product .container .row .cardShoes .shoes {
+.recentsProduct .container .row .cardShoes .shoes {
   background: url(../img/products_mini/product-shoes.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(../img/cta-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.banner .content p {
+  color: #fff;
+  font-size: 45px;
+}
+.banner .content button {
+  background-color: #DD4545;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 13px;
 }
 
 body {

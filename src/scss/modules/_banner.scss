@@ -1,0 +1,25 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(../img/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    .content{
+        p{
+            color: #fff;
+            font-size: 45px;
+        }
+        button{
+            background-color: $rougeGlobal;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            color: #fff;
+            font-size: 13px;
+        }
+    }
+}
