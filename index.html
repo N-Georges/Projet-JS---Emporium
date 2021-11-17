@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emporium</title>
     <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -33,21 +34,53 @@
         </nav>
     </header>
     <main>
+        <!-- section 1 -->
         <section class="firstSection">
             <div class="content">
                 <span>Shop at</span>
                 <div>
                     <img src="./public/img/logo.png" alt="logo_emporium">
                 </div>
-                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my.</p>
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet  mornings of spring which I enjoy with my.</p>
                 <button class="saleItems">SALE ITEMS</button>
             </div>
             <div class="outfit">
                 <img src="./public/img/slider-1.jpg" alt="outfit-brand">
             </div>
         </section>
-    </main>
+        <!-- section 2 -->
+        <section class="twoSection">
+                <div class="row">
+                    <div class="card1 col-3"><span>Living Room</span><hr></div>
+                    <div class="card2 col-3"><span>Living Room</span><hr></div>
+                    <div class="card3 col-3"><span>Living Room</span><hr></div>
+            </div>
+        </section>
+        <!-- section 3 -->
+        <section class="product">
+            <div class="container">
+                <h2>Recents Products</h2>
+                <div class="row">
+                    <div class="cardFauteuil col-4">
+                        <div id="fauteuil"></div>
+                        <span>Luxury Sofa</span>
+                        <span>$600.00</span>
+                    </div>
+                    <div class="cardGant col-4">
+                        <div id="cardGant"></div>
+                        <span>Luxury Sofa</span>
+                        <span>$600.00</span>
+                    </div>
+                    <div class="cardGant col-4">
+                        <div id="cardGant"></div>
+                        <span>Luxury Sofa</span>
+                        <span>$600.00</span>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+    </main>
     <script src="./public/js/main.js"></script>
 </body>
 </html>

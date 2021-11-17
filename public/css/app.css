@@ -6170,7 +6170,7 @@ header nav ul .light:hover .light_mode {
   width: 35px;
   height: 35px;
   top: -50px;
-  left: -5px;
+  left: -2px;
   border: 1px solid lightgray;
   visibility: visible;
   opacity: 1;
@@ -6183,6 +6183,7 @@ header nav ul .light .light_mode {
   border-radius: 5px;
   padding: 3px;
   margin: 0;
+  font-size: 10px;
 }
 header nav ul .dark {
   position: relative;
@@ -6199,7 +6200,7 @@ header nav ul .dark:hover .dark_mode {
   width: 35px;
   height: 35px;
   top: -50px;
-  right: -5px;
+  right: -2px;
   visibility: visible;
   opacity: 1;
   transition: 0.2s;
@@ -6211,15 +6212,16 @@ header nav ul .dark .dark_mode {
   border-radius: 5px;
   padding: 3px;
   margin: 0;
+  font-size: 10px;
 }
 
 .firstSection {
   background-color: #f5f1f1;
   display: flex;
-  width: 100vw;
+  width: 100%;
 }
 .firstSection .content {
-  width: 100%;
+  width: 100vw;
   padding: 90px;
   padding-right: 0;
   padding-left: 150px;
@@ -6244,9 +6246,81 @@ header nav ul .dark .dark_mode {
   border-radius: 20px;
   cursor: pointer;
 }
-.firstSection img {
+.firstSection .outfit {
+  width: 100vw;
+}
+.firstSection .outfit img {
   height: 450px;
-  padding-right: 200px;
+}
+
+.twoSection .row {
+  width: 100%;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.twoSection .row .card1 {
+  background: url(../img/services/service-1.jpg) center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.twoSection .row .card1 span {
+  color: #fff;
+  font-size: 30px;
+}
+.twoSection .row .card1 hr {
+  top: 55%;
+  position: absolute;
+  width: 70%;
+  background-color: #fff;
+  height: 2px;
+}
+.twoSection .row .card2 {
+  background: url(../img/services/service-2.jpg) no-repeat center bottom;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.twoSection .row .card2 span {
+  color: #fff;
+  font-size: 30px;
+}
+.twoSection .row .card2 hr {
+  top: 55%;
+  position: absolute;
+  width: 70%;
+  background-color: #fff;
+  height: 2px;
+}
+.twoSection .row .card3 {
+  background: url(../img/services/slider-3.jpg) no-repeat right top;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.twoSection .row .card3 span {
+  color: #fff;
+  font-size: 30px;
+}
+.twoSection .row .card3 hr {
+  top: 55%;
+  position: absolute;
+  width: 70%;
+  background-color: #fff;
+  height: 2px;
 }
 
 body {
