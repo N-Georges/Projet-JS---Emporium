@@ -1,81 +1,20 @@
-// .twoSection{
-//     display: flex;
-//     .card1{
-//         background: url(../img/services/service-1.jpg) center;
-//         position: relative;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         height: 180px;
-//         // width: 300px;
-//         color: #fff;
-//         hr{
-//             // position: absolute;
-//             // top: 55%;
-//             // transform: translateY(-55%);
-//             // left: 50%;
-//             // transform: translateX(-50%);
-//             // // height: 5px;
-//             // // color: #fff;
-//             // background: #fff;
-//             // border: none;
-//             // width: 250px;
-//             // padding: 1px;
-//             // border-radius: 5px;
-//         }
-//     }
-// }
-
 .twoSection{
     .row{
         width: 100%;
         justify-content: space-around;
         margin: 50px 0;
+        margin-bottom: 100px;
         .card1{
             background: url(../img/services/service-1.jpg) center;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 180px;
-            width: 400px;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-            span{
-                color: #fff;
-                font-size: 30px;
-            }
-            hr{
-                top: 55%;
-                position: absolute;
-                width: 70%;
-                background-color: #fff;
-                height: 2px;
-                
-            }
         }
         .card2{
             background: url(../img/services/service-2.jpg)no-repeat center bottom;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 180px;
-            width: 400px;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-            span{
-                color: #fff;
-                font-size: 30px;
-            }
-            hr{
-                top: 55%;
-                position: absolute;
-                width: 70%;
-                background-color: #fff;
-                height: 2px;
-            }
         }
         .card3{
             background: url(../img/services/slider-3.jpg) no-repeat right top ;
+        }
+        .card{
+            border: none;
             background-repeat: no-repeat;
             position: relative;
             display: flex;
@@ -84,6 +23,7 @@
             height: 180px;
             width: 400px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            cursor: pointer;
             span{
                 color: #fff;
                 font-size: 30px;

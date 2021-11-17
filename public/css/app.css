@@ -6149,7 +6149,7 @@ header nav ul li #connexion {
 header nav ul li #connexion:hover {
   color: lightgray;
 }
-header nav ul .dark_modes {
+header nav ul .darkModes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6164,7 +6164,7 @@ header nav ul .light {
   cursor: pointer;
   margin-right: 3px;
 }
-header nav ul .light:hover .light_mode {
+header nav ul .light:hover .lightMode {
   color: #373737;
   background: transparent;
   width: 35px;
@@ -6176,7 +6176,7 @@ header nav ul .light:hover .light_mode {
   opacity: 1;
   transition: 0.2s;
 }
-header nav ul .light .light_mode {
+header nav ul .light .lightMode {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -6194,7 +6194,7 @@ header nav ul .dark {
   border-radius: 3px;
   cursor: pointer;
 }
-header nav ul .dark:hover .dark_mode {
+header nav ul .dark:hover .darkMode {
   color: #fff;
   background: black;
   width: 35px;
@@ -6205,7 +6205,7 @@ header nav ul .dark:hover .dark_mode {
   opacity: 1;
   transition: 0.2s;
 }
-header nav ul .dark .dark_mode {
+header nav ul .dark .darkMode {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -6257,51 +6257,19 @@ header nav ul .dark .dark_mode {
   width: 100%;
   justify-content: space-around;
   margin: 50px 0;
+  margin-bottom: 100px;
 }
 .twoSection .row .card1 {
   background: url(../img/services/service-1.jpg) center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-  width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.twoSection .row .card1 span {
-  color: #fff;
-  font-size: 30px;
-}
-.twoSection .row .card1 hr {
-  top: 55%;
-  position: absolute;
-  width: 70%;
-  background-color: #fff;
-  height: 2px;
 }
 .twoSection .row .card2 {
   background: url(../img/services/service-2.jpg) no-repeat center bottom;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-  width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.twoSection .row .card2 span {
-  color: #fff;
-  font-size: 30px;
-}
-.twoSection .row .card2 hr {
-  top: 55%;
-  position: absolute;
-  width: 70%;
-  background-color: #fff;
-  height: 2px;
 }
 .twoSection .row .card3 {
   background: url(../img/services/slider-3.jpg) no-repeat right top;
+}
+.twoSection .row .card {
+  border: none;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -6310,17 +6278,129 @@ header nav ul .dark .dark_mode {
   height: 180px;
   width: 400px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: pointer;
 }
-.twoSection .row .card3 span {
+.twoSection .row .card span {
   color: #fff;
   font-size: 30px;
 }
-.twoSection .row .card3 hr {
+.twoSection .row .card hr {
   top: 55%;
   position: absolute;
   width: 70%;
   background-color: #fff;
   height: 2px;
+}
+
+.product .container {
+  width: 100%;
+}
+.product .container .sale {
+  position: absolute;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DD4545;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  color: #fff;
+}
+.product .container .content {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+.product .container .content span:nth-of-type(2) {
+  color: #DD4545;
+  font-size: 12px;
+}
+.product .container .content .ancienPrix {
+  color: #6C757D;
+  margin-right: 3px;
+  text-decoration: line-through;
+}
+.product .container .card {
+  height: 250px;
+  width: 330px;
+  border: none;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.product .container .setup {
+  border-radius: 5px;
+}
+.product .container .row {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+.product .container .row .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product .container .row .cardLSofa .luxurySofa {
+  background: url(../img/products_mini/product-luxury-sofa.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardGloves .gloves {
+  background: url(../img/products_mini/product-gloves.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardBowl .bowl {
+  background: url(../img/products_mini/product-cups.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardBag .Bag {
+  background: url(../img/products_mini/product-bag.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardTshirt .Tshirt {
+  background: url(../img/products_mini/product-tshirt.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardSet .set {
+  background: url(../img/products_mini/product-plates.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardMSofa .Sofa {
+  background: url(../img/products_mini/product-modern-sofa.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+}
+.product .container .row .cardBed .bed {
+  background: url(../img/products_mini/product-bed.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.product .container .row .cardShoes .shoes {
+  background: url(../img/products_mini/product-shoes.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 body {

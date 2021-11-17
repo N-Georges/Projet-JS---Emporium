@@ -1,0 +1,134 @@
+.product{
+    .container{
+        width: 100%;
+        .sale{
+            position: absolute;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $rougeGlobal;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 10px;
+            color: #fff;
+        }
+        .content{
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 600;
+            span:nth-of-type(2){
+                color: $rougeGlobal;
+                font-size: 12px;
+            } 
+            .ancienPrix{
+                color: $gris;
+                margin-right: 3px;
+                text-decoration: line-through;
+            }           
+        }
+        .card{
+            height: 250px;
+            width: 330px;
+            border: none;
+            margin-bottom: 30px;
+            padding-bottom: 50px;
+            border-radius: 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .setup{
+            border-radius: 5px;
+        }
+        .row{
+            margin: 50px 0px;
+            display: flex;
+            justify-content: center;
+            .title{
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            // row 1
+            .cardLSofa{
+                .luxurySofa{
+                    background: url(../img/products_mini/product-luxury-sofa.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            .cardGloves{
+                .gloves{
+                    background: url(../img/products_mini/product-gloves.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            .cardBowl{
+                .bowl{
+                    background: url(../img/products_mini/product-cups.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            // row 2
+            .cardBag{
+                .Bag{
+                    background: url(../img/products_mini/product-bag.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            .cardTshirt{
+                .Tshirt{
+                    background: url(../img/products_mini/product-tshirt.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            .cardSet{
+                .set{
+                    background: url(../img/products_mini/product-plates.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            // row 3 
+            .cardMSofa{
+                .Sofa{
+                    background: url(../img/products_mini/product-modern-sofa.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    height: 100%;
+                }
+            }
+            .cardBed{
+                .bed{
+                    background: url(../img/products_mini/product-bed.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+            .cardShoes{
+                .shoes{
+                    background: url(../img/products_mini/product-shoes.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+}
