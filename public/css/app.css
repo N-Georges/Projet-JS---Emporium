@@ -6213,8 +6213,40 @@ header nav ul .dark .dark_mode {
   margin: 0;
 }
 
-.firsSection {
-  background: #F3F3F3;
+.firstSection {
+  background-color: #f5f1f1;
+  display: flex;
+  width: 100vw;
+}
+.firstSection .content {
+  width: 100%;
+  padding: 90px;
+  padding-right: 0;
+  padding-left: 150px;
+}
+.firstSection .content span {
+  color: #DD4545;
+  font-size: 50px;
+}
+.firstSection .content img {
+  height: 70px;
+}
+.firstSection .content p {
+  color: #565E62;
+}
+.firstSection .content .saleItems {
+  color: #fff;
+  font-size: 10px;
+  height: 40px;
+  width: 130px;
+  background-color: #DD4545;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.firstSection img {
+  height: 450px;
+  padding-right: 200px;
 }
 
 body {

@@ -1,3 +1,35 @@
-.firsSection{
-    background: #F3F3F3;
+.firstSection{
+    background-color: $gris3;
+    display: flex;
+    width: 100vw;
+    .content{
+        width: 100%;
+        padding: 90px;
+        padding-right: 0;
+        padding-left: 150px;
+        span{
+            color: $rougeGlobal;
+            font-size: 50px;
+        }
+        img{
+            height: 70px;
+        }
+        p{
+            color: $gris2;
+        }
+        .saleItems{
+            color: #fff;
+            font-size: 10px;
+            height: 40px;
+            width: 130px;
+            background-color: $rougeGlobal;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+    img{
+        height: 450px;
+        padding-right: 200px;
+    }
 }
