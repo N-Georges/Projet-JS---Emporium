@@ -6407,7 +6407,7 @@ header nav ul .dark .darkMode {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 600px;
   background-image: url(../img/cta-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -6425,6 +6425,66 @@ header nav ul .dark .darkMode {
   padding: 5px 10px;
   color: #fff;
   font-size: 13px;
+}
+
+.fashionProduct .container .row {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+.fashionProduct .container .row .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.lastCard .container-fluid .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.lastCard .container-fluid .row .card {
+  text-align: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 300px;
+  width: 400px;
+  padding: 0 10px;
+}
+.lastCard .container-fluid .row .card button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 13px;
+}
+.lastCard .container-fluid .row .card .btnBlack {
+  background-color: #373737;
+}
+.lastCard .container-fluid .row .card .btnWhite {
+  background-color: #fff;
+  color: #373737;
+}
+.lastCard .container-fluid .row .card .icon {
+  font-size: 30px;
+}
+.lastCard .container-fluid .row .card .title {
+  font-weight: 600;
+}
+.lastCard .container-fluid .row .rougeBg {
+  background-color: #DD4545;
+  color: #fff;
+}
+.lastCard .container-fluid .row .white {
+  background-color: #f5f1f1;
+}
+.lastCard .container-fluid .row .white .content {
+  color: #565E62;
+}
+.lastCard .container-fluid .row .red {
+  background: red;
 }
 
 body {

@@ -1,0 +1,53 @@
+.lastCard{
+    .container-fluid{
+        .row{
+            display: flex;
+            justify-content: space-evenly;
+            .card{
+                text-align: center;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                height: 300px;
+                width: 400px;
+                padding: 0 10px;
+                button{
+                    border: none;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                    color: #fff;
+                    font-size: 13px;
+                }
+                .btnBlack{
+                    background-color: #373737;
+                }
+                .btnWhite{
+                    background-color: #fff;
+                    color: #373737;
+                }
+                .icon{
+                    font-size: 30px;
+                }
+                .title{
+                    font-weight: 600;
+                }
+            }
+            .rougeBg{
+                background-color: $rougeGlobal;
+                color: #fff;
+            }
+            .white{
+                background-color: $gris3;
+                .content{
+                    color: $gris2;
+                }
+            }
+            .red{
+                background: red;
+                
+            }
+        }
+    }
+}
