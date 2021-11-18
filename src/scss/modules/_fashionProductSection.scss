@@ -1,5 +1,53 @@
 .fashionProduct{
     .container{
+        .sale{
+            position: absolute;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $rougeGlobal;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 10px;
+            color: #fff;
+        }
+        .content{
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 600;
+            span:nth-of-type(2){
+                color: $rougeGlobal;
+                font-size: 12px;
+            } 
+            .ancienPrix{
+                color: $gris;
+                margin-right: 3px;
+                text-decoration: line-through;
+            }           
+        }
+        .card{
+            transition: 0.5s;
+            height: 300px;
+            width: 260px;
+            border: none;
+            margin-bottom: 30px;
+            padding-bottom: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+            display: none;
+        }
+        .active{
+            display: inline-block;
+            
+        }
+        .setup{
+            border-radius: 5px;
+        }
         .row{
             margin: 50px 0px;
             display: flex;
@@ -9,7 +57,114 @@
                 font-size: 25px;
                 font-weight: 600;
             }  
-              
+        }
+        .row{
+            .dots{
+                display: flex;
+                justify-content: center;
+                .active{
+                    background-color: $dark;
+                }
+                span{
+                    height: 10px;
+                    width: 10px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    border: 2px solid;
+                }
+            }
+            .cardLSofa{
+                .luxurySofa{
+                    position: relative;
+                    background: url(../img/products_mini/product-luxury-sofa.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg); 
+                    }
+                }
+            }
+            .cardGloves{
+                .gloves{
+                    position: relative;
+                    background: url(../img/products_mini/product-gloves.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
+                }
+            }
+            .cardBowl{
+                .bowl{
+                    position: relative;
+                    background: url(../img/products_mini/product-cups.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
+                }
+            }
+            .cardBag{
+                .Bag{
+                    position: relative;
+                    background: url(../img/products_mini/product-bag.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
+                }
+            }
+            .cardTshirt{
+                .Tshirt{
+                    position: relative;
+                    background: url(../img/products_mini/product-tshirt.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
+                }
+            }
+            .cardSet{
+                .set{
+                    position: relative;
+                    background: url(../img/products_mini/product-plates.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
+                }
+            }
+            .cardMSofa{
+                .Sofa{
+                    position: relative;
+                    background: url(../img/products_mini/product-modern-sofa.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
+                }
+            }
         }
     }
 }
