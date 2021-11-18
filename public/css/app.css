@@ -6162,15 +6162,45 @@ footer .container-fluid .row span {
   color: #565E62;
 }
 
+header {
+  position: relative;
+}
+header .logoscale {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  transition: 0.5s;
+}
+header .navscale {
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  transition: 0.5s;
+}
 header .logo {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 50px 0;
+  margin: 30px 0;
+  transition: 0.2s;
+}
+header .logo img {
+  width: 200px;
+}
+header nav {
+  transition: 0.3s;
+  width: 100%;
 }
 header nav ul {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 header nav ul li {
   margin: 0 20px;
@@ -6215,7 +6245,7 @@ header nav ul .light:hover .lightMode {
   background: transparent;
   width: 35px;
   height: 35px;
-  top: -50px;
+  top: -36px;
   left: -2px;
   border: 1px solid lightgray;
   visibility: visible;
@@ -6245,7 +6275,7 @@ header nav ul .dark:hover .darkMode {
   background: black;
   width: 35px;
   height: 35px;
-  top: -50px;
+  top: -36px;
   right: -2px;
   visibility: visible;
   opacity: 1;
