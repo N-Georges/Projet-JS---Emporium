@@ -1,0 +1,53 @@
+footer{
+    background-color: $darkFooter;
+    .container{
+        .row{
+            padding: 40px;
+            .first{
+                p{
+                    color: $gris2;
+                    font-size: 15px;
+                }
+            }
+            .two{
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                font-size: 13px;
+                span{
+                    margin-bottom: 10px;
+                }
+            }
+            .three{
+                a{
+                    text-decoration: none;
+                    border: 1px solid lightgrey;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    color: $gris2;
+                    cursor: pointer;
+                    &:hover{
+                        color: $gris3;
+                    }
+                }
+            }
+            .title{
+                h5{
+                    font-size: 15px;
+                    color: #fff;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .container-fluid{
+        background-color: black;
+        .row{
+            text-align: center;
+            padding: 20px 0;
+            span{
+                color: $gris2;
+            }
+        }
+    }
+}

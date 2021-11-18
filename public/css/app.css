@@ -6116,6 +6116,52 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+footer {
+  background-color: #343A40;
+}
+footer .container .row {
+  padding: 40px;
+}
+footer .container .row .first p {
+  color: #565E62;
+  font-size: 15px;
+}
+footer .container .row .two {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 13px;
+}
+footer .container .row .two span {
+  margin-bottom: 10px;
+}
+footer .container .row .three a {
+  text-decoration: none;
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #565E62;
+  cursor: pointer;
+}
+footer .container .row .three a:hover {
+  color: #f5f1f1;
+}
+footer .container .row .title h5 {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer .container-fluid {
+  background-color: black;
+}
+footer .container-fluid .row {
+  text-align: center;
+  padding: 20px 0;
+}
+footer .container-fluid .row span {
+  color: #565E62;
+}
+
 header .logo {
   width: 100%;
   display: flex;
