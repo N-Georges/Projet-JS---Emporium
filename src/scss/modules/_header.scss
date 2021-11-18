@@ -4,7 +4,6 @@ header{
         display: flex;
         justify-content: center;
         margin: 0;
-        transition: 0.5s;
     }
     .navscale{
         position: fixed;
@@ -14,7 +13,7 @@ header{
         justify-content: flex-start;
         align-items: center;
         height: 90px;
-        transition: 0.5s;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     position: relative;
     .logo{
@@ -22,13 +21,11 @@ header{
         display: flex;
         justify-content: center;
         margin: 30px 0;
-        transition: 0.2s;
         img{
             width: 200px;
         }
     }
     nav{
-        transition: 0.3s;
         width: 100%;
         ul{
             margin-top: 15px;

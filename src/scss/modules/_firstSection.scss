@@ -2,17 +2,18 @@
     background-color: $gris3;
     display: flex;
     width: 100%;
+    // flex-wrap: wrap;
     .content{
         width: 100vw;
-        padding: 90px;
-        padding-right: 0;
+        padding: 90px 0;
         padding-left: 150px;
         span{
             color: $rougeGlobal;
             font-size: 50px;
         }
         img{
-            height: 70px;
+            height: 80px;
+            width: 100%;
         }
         p{
             color: $gris2;
@@ -30,8 +31,11 @@
     }
     .outfit{
         width: 100vw;
+        flex-wrap: wrap;
         img{
             height: 450px;
+            width: 100%;
         }
     }
 }
+

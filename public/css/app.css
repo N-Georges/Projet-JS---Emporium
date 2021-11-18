@@ -6170,7 +6170,6 @@ header .logoscale {
   display: flex;
   justify-content: center;
   margin: 0;
-  transition: 0.5s;
 }
 header .navscale {
   position: fixed;
@@ -6180,20 +6179,18 @@ header .navscale {
   justify-content: flex-start;
   align-items: center;
   height: 90px;
-  transition: 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 header .logo {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 30px 0;
-  transition: 0.2s;
 }
 header .logo img {
   width: 200px;
 }
 header nav {
-  transition: 0.3s;
   width: 100%;
 }
 header nav ul {
@@ -6298,8 +6295,7 @@ header nav ul .dark .darkMode {
 }
 .firstSection .content {
   width: 100vw;
-  padding: 90px;
-  padding-right: 0;
+  padding: 90px 0;
   padding-left: 150px;
 }
 .firstSection .content span {
@@ -6307,7 +6303,8 @@ header nav ul .dark .darkMode {
   font-size: 50px;
 }
 .firstSection .content img {
-  height: 70px;
+  height: 80px;
+  width: 100%;
 }
 .firstSection .content p {
   color: #565E62;
@@ -6324,9 +6321,11 @@ header nav ul .dark .darkMode {
 }
 .firstSection .outfit {
   width: 100vw;
+  flex-wrap: wrap;
 }
 .firstSection .outfit img {
   height: 450px;
+  width: 100%;
 }
 
 .twoSection .row {
@@ -6368,6 +6367,17 @@ header nav ul .dark .darkMode {
   height: 2px;
 }
 
+.recentsProduct .btnCard {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  visibility: hidden;
+}
+.recentsProduct .btnCard button {
+  width: 50%;
+  height: 60px;
+}
 .recentsProduct .container {
   width: 100%;
 }
@@ -6402,12 +6412,12 @@ header nav ul .dark .darkMode {
   text-decoration: line-through;
 }
 .recentsProduct .container .card {
-  height: 250px;
+  transition: 0.5s;
+  height: 350px;
   width: 330px;
   border: none;
   margin-bottom: 30px;
   padding-bottom: 50px;
-  border-radius: 15px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -6425,65 +6435,110 @@ header nav ul .dark .darkMode {
   font-weight: 600;
 }
 .recentsProduct .container .row .cardLSofa .luxurySofa {
+  position: relative;
   background: url(../img/products_mini/product-luxury-sofa.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardLSofa .luxurySofa:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardGloves .gloves {
+  position: relative;
   background: url(../img/products_mini/product-gloves.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardGloves .gloves:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardBowl .bowl {
+  position: relative;
   background: url(../img/products_mini/product-cups.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardBowl .bowl:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardBag .Bag {
+  position: relative;
   background: url(../img/products_mini/product-bag.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardBag .Bag:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardTshirt .Tshirt {
+  position: relative;
   background: url(../img/products_mini/product-tshirt.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardTshirt .Tshirt:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardSet .set {
+  position: relative;
   background: url(../img/products_mini/product-plates.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardSet .set:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardMSofa .Sofa {
+  position: relative;
   background: url(../img/products_mini/product-modern-sofa.jpg);
   background-size: cover;
   background-position: bottom;
   height: 100%;
 }
+.recentsProduct .container .row .cardMSofa .Sofa:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardBed .bed {
+  position: relative;
   background: url(../img/products_mini/product-bed.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
 }
+.recentsProduct .container .row .cardBed .bed:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
+}
 .recentsProduct .container .row .cardShoes .shoes {
+  position: relative;
   background: url(../img/products_mini/product-shoes.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
+}
+.recentsProduct .container .row .cardShoes .shoes:hover .btnCard {
+  visibility: visible;
+  transform: scaleX(90deg);
 }
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 500px;
   background-image: url(../img/cta-bg.jpg);
   background-position: center;
   background-size: cover;

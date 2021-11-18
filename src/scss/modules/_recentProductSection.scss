@@ -1,4 +1,16 @@
 .recentsProduct{
+    .btnCard{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        visibility: hidden;
+        button{
+            width: 50%;
+            height: 60px;
+    
+        }
+    }
     .container{
         width: 100%;
         .sale{
@@ -32,12 +44,12 @@
             }           
         }
         .card{
-            height: 250px;
+            transition: 0.5s;
+            height: 350px;
             width: 330px;
             border: none;
             margin-bottom: 30px;
             padding-bottom: 50px;
-            border-radius: 15px;
             margin-right: 10px;
             cursor: pointer;
         }
@@ -56,76 +68,121 @@
             // row 1
             .cardLSofa{
                 .luxurySofa{
+                    position: relative;
                     background: url(../img/products_mini/product-luxury-sofa.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             .cardGloves{
                 .gloves{
+                    position: relative;
                     background: url(../img/products_mini/product-gloves.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             .cardBowl{
                 .bowl{
+                    position: relative;
                     background: url(../img/products_mini/product-cups.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             // row 2
             .cardBag{
                 .Bag{
+                    position: relative;
                     background: url(../img/products_mini/product-bag.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             .cardTshirt{
                 .Tshirt{
+                    position: relative;
                     background: url(../img/products_mini/product-tshirt.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             .cardSet{
                 .set{
+                    position: relative;
                     background: url(../img/products_mini/product-plates.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             // row 3 
             .cardMSofa{
                 .Sofa{
+                    position: relative;
                     background: url(../img/products_mini/product-modern-sofa.jpg);
                     background-size: cover;
                     background-position: bottom;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             .cardBed{
                 .bed{
+                    position: relative;
                     background: url(../img/products_mini/product-bed.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
             .cardShoes{
                 .shoes{
+                    position: relative;
                     background: url(../img/products_mini/product-shoes.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100%;
+                    &:hover .btnCard{
+                        visibility: visible;
+                        transform: scaleX(90deg);
+                    }
                 }
             }
 
