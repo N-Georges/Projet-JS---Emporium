@@ -6293,10 +6293,21 @@ header nav ul .dark .darkMode {
   display: flex;
   width: 100%;
 }
+@media screen and (max-width: 620px) {
+  .firstSection {
+    flex-wrap: wrap;
+  }
+}
 .firstSection .content {
   width: 100vw;
   padding: 90px 0;
   padding-left: 150px;
+}
+@media screen and (max-width: 620px) {
+  .firstSection .content {
+    padding: 90px 20px;
+    text-align: center;
+  }
 }
 .firstSection .content span {
   color: #DD4545;
@@ -6321,7 +6332,6 @@ header nav ul .dark .darkMode {
 }
 .firstSection .outfit {
   width: 100vw;
-  flex-wrap: wrap;
 }
 .firstSection .outfit img {
   height: 450px;
@@ -6423,7 +6433,18 @@ header nav ul .dark .darkMode {
 }
 .recentsProduct .container .card:hover .btnCard {
   visibility: visible;
-  transform: scaleX(90deg);
+  animation: carre 1.5s ease-in-out;
+}
+@keyframes carre {
+  0% {
+    bottom: -10px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 .recentsProduct .container .setup {
   border-radius: 5px;
@@ -6590,6 +6611,18 @@ header nav ul .dark .darkMode {
 }
 .fashionProduct .container .row .dots .active {
   background-color: #373737;
+  animation: card 1s ease-in-out;
+}
+@keyframes card {
+  0% {
+    bottom: -10px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 .fashionProduct .container .row .dots span {
   height: 10px;
@@ -6700,10 +6733,10 @@ header nav ul .dark .darkMode {
 
 .modal1 {
   position: absolute;
-  top: 25%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
-  height: 70%;
+  height: 80%;
   width: 50%;
   background-color: #fff;
   border-radius: 5px;
@@ -6711,7 +6744,7 @@ header nav ul .dark .darkMode {
 }
 .modal1 .container .top {
   margin: 5px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .modal1 .container .top .quit .btn-close {
   background-color: #DD4545;
@@ -6762,6 +6795,12 @@ header nav ul .dark .darkMode {
 }
 .modal1 .container .media ul li i {
   font-size: 25px;
+}
+.modal1 .container .inscription2 {
+  display: none;
+}
+.modal1 .container .active {
+  display: inline-block;
 }
 
 .active {

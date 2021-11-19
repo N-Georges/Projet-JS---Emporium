@@ -99,11 +99,34 @@ four.addEventListener('click', () => {
 let connexion =  document.querySelector('#connexion')
 let quit = document.querySelector('.quit')
 let modal = document.querySelector('.modal1')
+let connected = document.querySelector('.btnConnect')
+let connect = document.querySelector('#connected')
+let inscript = document.querySelector('.inscrip')
+let inscriptDiv = document.querySelector('.inscription2')
+let connectForm = document.querySelector('.connex')
+let formCheck = document.querySelector('.formCheck')
 connexion.addEventListener('click', () => {
-    console.log(connexion);
     modal.classList.add('active')
-    console.log(modal);
+    modal.classList.add('overflow')
 })
 quit.addEventListener('click', () => {
     modal.classList.remove('active')
+})
+
+inscript.addEventListener('click', () => {
+    inscriptDiv.classList.add('active')
+    formCheck.style.display = 'none'
+})
+connectForm.addEventListener('click', () => {
+    inscriptDiv.classList.remove('active')
+    formCheck.style.display = 'inline-block'
+})
+
+if (modal.classList('active') == true) {
+    console.log('yes');
+}
+// dark mode
+let dark = document.querySelector('.dark')
+dark.addEventListener('click', () =>{
+        console.log('dark');
 })

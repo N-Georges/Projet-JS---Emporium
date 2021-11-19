@@ -1,10 +1,10 @@
 .modal1{
     position: absolute;
-    top: 25%;
+    top: 18%;
     // transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
-    height: 70%;
+    height: 80%;
     width: 50%;
     background-color: #fff;
     border-radius: 5px;
@@ -14,7 +14,7 @@
     .container{
         .top{
             margin: 5px;
-            margin-top: 40px;
+            margin-top: 10px;
             .quit{
                 .btn-close{
                     background-color: $rougeGlobal;
@@ -76,10 +76,14 @@
                 }
             }
         }
+        .inscription2{
+            display: none;
+        }
+        .active{
+            display: inline-block;
+        }
     }
 }
 .active{
     display: inline-block;
-    // visibility: visible;
-    // opacity: 1;
 }
