@@ -6365,6 +6365,11 @@ header nav ul .dark .darkMode {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   cursor: pointer;
 }
+@media screen and (max-width: 620px) {
+  .twoSection .row .card {
+    margin-bottom: 10px;
+  }
+}
 .twoSection .row .card span {
   color: #fff;
   font-size: 30px;
