@@ -95,3 +95,15 @@ four.addEventListener('click', () => {
 //     })
 // }
 
+// apparition modal
+let connexion =  document.querySelector('#connexion')
+let quit = document.querySelector('.quit')
+let modal = document.querySelector('.modal1')
+connexion.addEventListener('click', () => {
+    console.log(connexion);
+    modal.classList.add('active')
+    console.log(modal);
+})
+quit.addEventListener('click', () => {
+    modal.classList.remove('active')
+})

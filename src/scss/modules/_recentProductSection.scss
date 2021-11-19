@@ -8,7 +8,6 @@
         button{
             width: 50%;
             height: 60px;
-    
         }
     }
     .container{
@@ -52,6 +51,10 @@
             padding-bottom: 50px;
             margin-right: 10px;
             cursor: pointer;
+            &:hover .btnCard{
+                visibility: visible;
+                transform: scaleX(90deg);
+            }
         }
         .setup{
             border-radius: 5px;
@@ -73,10 +76,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             .cardGloves{
@@ -86,10 +85,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             .cardBowl{
@@ -99,10 +94,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             // row 2
@@ -113,10 +104,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             .cardTshirt{
@@ -126,10 +113,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             .cardSet{
@@ -139,10 +122,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             // row 3 
@@ -153,10 +132,6 @@
                     background-size: cover;
                     background-position: bottom;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             .cardBed{
@@ -166,10 +141,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
             .cardShoes{
@@ -179,10 +150,6 @@
                     background-size: cover;
                     background-position: center;
                     height: 100%;
-                    &:hover .btnCard{
-                        visibility: visible;
-                        transform: scaleX(90deg);
-                    }
                 }
             }
 
