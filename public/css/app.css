@@ -6566,10 +6566,11 @@ header nav ul .dark .darkMode {
   align-items: center;
   background-color: #DD4545;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   font-size: 10px;
   color: #fff;
+  margin-right: 10px;
 }
 .fashionProduct .container .content {
   position: relative;
