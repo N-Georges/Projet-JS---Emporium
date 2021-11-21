@@ -130,3 +130,12 @@ let dark = document.querySelector('.dark')
 dark.addEventListener('click', () =>{
         console.log('dark');
 })
+
+
+// dark mode
+let darkmode = document.querySelector('.dark')
+darkmode.addEventListener('click', () =>{
+    // let body = document.body
+    // body.classList.toggle('dark-mode')
+    document.body.style.backgroundColor = "yellow";
+})
