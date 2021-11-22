@@ -128,7 +128,6 @@ let menu = document.querySelector('.toggleBurger')
 let navbar = document.querySelector('.navbar2')
 menu.addEventListener('click', () => {
     navbar.classList.toggle('navbar1')
-    console.log('yes');
 })
 
 ///////////////////////////////////////fin
