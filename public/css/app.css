@@ -6171,15 +6171,20 @@ header .logoscale {
   justify-content: center;
   margin: 0;
 }
+@media screen and (max-width: 774px) {
+  header .logoscale {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 header .navscale {
   position: fixed;
   z-index: 2;
   background-color: #fff;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 90px;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 header .logo {
   width: 100%;
@@ -6191,13 +6196,35 @@ header .logo img {
   width: 200px;
 }
 header nav {
+  position: relative;
   width: 100%;
+}
+@media screen and (max-width: 772px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 772px) {
+  header nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 20px;
+  }
 }
 header nav ul {
   margin-top: 15px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 772px) {
+  header nav ul {
+    display: none;
+  }
 }
 header nav ul li {
   margin: 0 20px;
@@ -6258,6 +6285,10 @@ header nav ul .light .lightMode {
   margin: 0;
   font-size: 10px;
 }
+header nav ul .light .light-mode {
+  background-color: black;
+  color: white;
+}
 header nav ul .dark {
   position: relative;
   background: #373737;
@@ -6290,6 +6321,65 @@ header nav ul .dark .darkMode {
 header nav ul .dark .dark-mode {
   background-color: black;
   color: white;
+}
+header .navbar1 {
+  border-radius: 10px;
+  padding: 15px 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  animation: navbar 1.5s;
+}
+@keyframes navbar {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    right: 0%;
+    transform: translateX(0%);
+  }
+}
+@media screen and (min-width: 772px) {
+  header .navbar1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 772px) {
+  header .navbar1 {
+    display: none;
+    padding: 15px 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    animation: navbar 1s;
+  }
+  header .navbar1 li {
+    margin-bottom: 20px;
+  }
+}
+header .toggleBurger {
+  cursor: pointer;
+}
+header .toggleBurger i {
+  font-size: 35px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 772px) {
+  header .toggleBurger {
+    display: none;
+  }
+}
+@media screen and (max-width: 774px) {
+  header .toggleBurger {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .firstSection {

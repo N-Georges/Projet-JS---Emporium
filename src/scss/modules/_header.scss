@@ -1,75 +1,109 @@
-header{
-    .logoscale{
+header {
+    position: relative;
+    .logoscale {
         height: 30px;
         display: flex;
         justify-content: center;
         margin: 0;
+        @media screen and (max-width: 774px) {
+            display: flex;
+            justify-content: flex-start;
+        }
     }
-    .navscale{
+
+    .navscale {
         position: fixed;
         z-index: 2;
         background-color: #fff;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         height: 90px;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-    position: relative;
-    .logo{
+
+    .logo {
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 30px 0;
-        img{
+        img {
             width: 200px;
         }
     }
-    nav{
+
+    nav {
+        position: relative;
+        @media screen and (max-width:772px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+        }
         width: 100%;
-        ul{
+        .logo {
+            @media screen and (max-width:772px) {
+                display: flex;
+                justify-content: flex-start;
+                margin: 0;
+                margin-left: 20px;
+            }
+        }
+
+        ul {
+            @media screen and (max-width:772px) {
+                display: none;
+            }
+
             margin-top: 15px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            li{
+
+            li {
                 margin: 0 20px;
                 list-style: none;
-                a{
+
+                a {
                     text-decoration: none;
                     color: black;
                     cursor: pointer;
                     color: $gris2;
                     font-size: 15px;
-                    &:hover{
+
+                    &:hover {
                         color: lightgray;
                     }
                 }
-                #connexion{
+
+                #connexion {
                     background: $gris;
                     color: white;
-                    padding: 6px ;
+                    padding: 6px;
                     border-radius: 5px;
-                    &:hover{
+
+                    &:hover {
                         color: lightgray;
                     }
                 }
             }
-            .darkModes{
+
+            .darkModes {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            .light{
+
+            .light {
                 position: relative;
                 background: #fff;
-                border: 1px solid lightgray; 
+                border: 1px solid lightgray;
                 width: 15px;
                 height: 15px;
                 border-radius: 3px;
                 cursor: pointer;
                 margin-right: 3px;
-                &:hover .lightMode{
+
+                &:hover .lightMode {
                     color: #373737;
                     background: transparent;
                     width: 35px;
@@ -81,7 +115,8 @@ header{
                     opacity: 1;
                     transition: 0.2s;
                 }
-                .lightMode{
+
+                .lightMode {
                     position: absolute;
                     visibility: hidden;
                     opacity: 0;
@@ -90,8 +125,13 @@ header{
                     margin: 0;
                     font-size: 10px;
                 }
+                .light-mode {
+                    background-color: black;
+                    color: white;
+                }
             }
-            .dark{
+
+            .dark {
                 position: relative;
                 background: $dark;
                 border: none;
@@ -99,7 +139,8 @@ header{
                 height: 15px;
                 border-radius: 3px;
                 cursor: pointer;
-                &:hover .darkMode{
+
+                &:hover .darkMode {
                     color: #fff;
                     background: black;
                     width: 35px;
@@ -110,7 +151,8 @@ header{
                     opacity: 1;
                     transition: 0.2s;
                 }
-                .darkMode{
+
+                .darkMode {
                     position: absolute;
                     visibility: hidden;
                     opacity: 0;
@@ -119,11 +161,66 @@ header{
                     margin: 0;
                     font-size: 10px;
                 }
-                .dark-mode{
+
+                .dark-mode {
                     background-color: black;
                     color: white;
                 }
             }
+        }
+    }
+
+    .navbar1 {
+        border-radius: 10px;
+        padding: 15px 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80%;
+        right: 0;
+        animation: navbar 1.5s;
+        @keyframes navbar {
+            from {
+                transform: translateX(100%);
+            }
+            
+            to {
+                right: 0%;
+                transform: translateX(0%);
+            }
+        }
+        @media screen and (min-width:772px) {
+            display: none;
+        }
+        @media screen and (max-width:772px) {
+            display: none;
+            padding: 15px 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 80%;
+            right: 0;
+            animation: navbar 1s;
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .toggleBurger {
+        cursor: pointer;
+        i {
+            font-size: 35px;
+            margin-right: 20px;
+        }
+        @media screen and (min-width:772px) {
+            display: none;
+        }
+        @media screen and (max-width: 774px) {
+            display: flex;
+            justify-content: flex-start;
         }
     }
 }

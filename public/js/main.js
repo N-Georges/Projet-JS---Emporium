@@ -1,4 +1,4 @@
-// scale du logo de la navbar
+/////////////////////////////// scale du logo de la navbar
 let nav = document.querySelector('nav')
 let logo = document.querySelector('.logo')
 
@@ -14,6 +14,8 @@ window.addEventListener("scroll", () => {
         nav.classList.remove('navscale')
     }
 })
+
+/////////////////////////fin
 
 // caroussel
 let dots = Array.from(document.querySelectorAll('.dot'))
@@ -73,29 +75,9 @@ four.addEventListener('click', () => {
     four.classList.add('active')
 })
 
-// const SetActive = (i) => {
-//     for (let slide of slides) {
-//         // if (i == 1) {
-//             lSofa.classList.remove('active');
-//             tshirt.classList.add('active');
-//             slides[i].classList.add('active');
-//             console.log(slide)[0];
-//         // }
-//         for (let dot of dots) {
-//             // ajout de la class active sur les indicateur quand il sont selectionner
-//             dot.classList.remove('active');
-//             dots[i].classList.add('active');
-//         }
-//     }
-// }
-// for (let j = 0; j<dots.length; j++){
-//     dots[j].addEventListener('click', () => {
-//         SetActive(j);
+//////////////////////////////////////////fin
 
-//     })
-// }
-
-// apparition modal
+///////////////////////// apparition modal
 let connexion =  document.querySelector('#connexion')
 let quit = document.querySelector('.quit')
 let modal = document.querySelector('.modal1')
@@ -122,20 +104,31 @@ connectForm.addEventListener('click', () => {
     formCheck.style.display = 'inline-block'
 })
 
-if (modal.classList('active') == true) {
-    console.log('yes');
-}
-// dark mode
+
+/////////////////////////// fin
+
+//////////////////////////////////////// dark mode
 let dark = document.querySelector('.dark')
+let light = document.querySelector('.light')
+let body = document.body
 dark.addEventListener('click', () =>{
-        console.log('dark');
+    console.log('dark');
+    document.body.style.backgroundColor = "black";
+})
+light.addEventListener('click', () => {
+    document.body.style.backgroundColor = "white";
+
 })
 
+//////////////////////////////fin
 
-// dark mode
-let darkmode = document.querySelector('.dark')
-darkmode.addEventListener('click', () =>{
-    // let body = document.body
-    // body.classList.toggle('dark-mode')
-    document.body.style.backgroundColor = "yellow";
+
+//////////////////////////////////////// menuBurger
+let menu = document.querySelector('.toggleBurger')
+let navbar = document.querySelector('.navbar2')
+menu.addEventListener('click', () => {
+    navbar.classList.toggle('navbar1')
+    console.log('yes');
 })
+
+///////////////////////////////////////fin
