@@ -1,38 +1,45 @@
-footer{
+footer {
     background-color: $darkFooter;
-    .container{
-        .row{
+
+    .container {
+        .row {
             padding: 40px;
-            .first{
-                p{
+
+            .first {
+                p {
                     color: $gris2;
                     font-size: 15px;
                 }
             }
-            .two{
+
+            .two {
                 display: flex;
                 flex-direction: column;
                 color: #fff;
                 font-size: 13px;
-                span{
+
+                span {
                     margin-bottom: 10px;
                 }
             }
-            .three{
-                a{
+
+            .three {
+                a {
                     text-decoration: none;
                     border: 1px solid lightgrey;
                     padding: 5px 10px;
                     border-radius: 3px;
                     color: $gris2;
                     cursor: pointer;
-                    &:hover{
+
+                    &:hover {
                         color: $gris3;
                     }
                 }
             }
-            .title{
-                h5{
+
+            .title {
+                h5 {
                     font-size: 15px;
                     color: #fff;
                     margin-bottom: 30px;
@@ -40,12 +47,15 @@ footer{
             }
         }
     }
-    .container-fluid{
+
+    .container-fluid {
         background-color: black;
-        .row{
+
+        .row {
             text-align: center;
             padding: 20px 0;
-            span{
+
+            span {
                 color: $gris2;
             }
         }

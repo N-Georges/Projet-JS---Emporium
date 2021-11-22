@@ -78,7 +78,7 @@ four.addEventListener('click', () => {
 //////////////////////////////////////////fin
 
 ///////////////////////// apparition modal
-let connexion =  document.querySelector('#connexion')
+let connexion = document.querySelector('#connexion')
 let quit = document.querySelector('.quit')
 let modal = document.querySelector('.modal1')
 let connected = document.querySelector('.btnConnect')
@@ -111,7 +111,7 @@ connectForm.addEventListener('click', () => {
 let dark = document.querySelector('.dark')
 let light = document.querySelector('.light')
 let body = document.body
-dark.addEventListener('click', () =>{
+dark.addEventListener('click', () => {
     console.log('dark');
     document.body.style.backgroundColor = "black";
 })

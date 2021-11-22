@@ -1,4 +1,4 @@
-.modal1{
+.modal1 {
     position: absolute;
     top: 23%;
     left: 50%;
@@ -8,97 +8,119 @@
     background-color: #fff;
     border-radius: 5px;
     display: none;
-    animation: slidein 1s;               
+    animation: slidein 1s;
+
     @keyframes slidein {
         from {
-          transform: translateX(-200%);
+            transform: translateX(-200%);
         }
+
         to {
             left: 50%;
-          transform: translateX(-50%);
+            transform: translateX(-50%);
         }
-      }
-    .container{
-        .top{
+    }
+
+    .container {
+        .top {
             margin: 5px;
             margin-top: 10px;
-            .quit{
-                .btn-close{
+
+            .quit {
+                .btn-close {
                     background-color: $rougeGlobal;
                 }
             }
         }
-        .connectBtn{
+
+        .connectBtn {
             margin: 5px;
             margin-top: 20px;
-            .connex{
+
+            .connex {
                 padding-right: 0;
                 cursor: pointer;
-                &:hover .connexion{
+
+                &:hover .connexion {
                     color: $gris3;
                 }
-                .connexion{
+
+                .connexion {
                     padding: 10px 0;
                     width: 100%;
                     font-size: 13px;
-                    
-                    
+
+
                 }
             }
-            .inscrip{
+
+            .inscrip {
                 cursor: pointer;
                 padding-right: 0;
-                &:hover .inscription{
+
+                &:hover .inscription {
                     color: $gris3;
                 }
+
                 @media screen and (max-width:576px) {
                     margin-top: 10px;
                 }
-                .inscription{
+
+                .inscription {
                     padding: 10px 0;
                     width: 100%;
                     font-size: 13px;
                 }
             }
         }
-        form{
+
+        form {
             margin: 10px 50px;
+
             @media screen and (max-width:480px) {
                 margin: 10px 0px;
             }
-            .email{
-                input{
+
+            .email {
+                input {
                     border: 1px solid lightgray;
                     border-radius: 5px;
                     padding: 5px 10px;
                 }
             }
         }
-        .media{
-            ul{
-                li{
+
+        .media {
+            ul {
+                li {
                     cursor: pointer;
                     margin-right: 15px;
-                    &:nth-of-type(1){
+
+                    &:nth-of-type(1) {
                         color: #39558E;
                     }
-                    &:nth-of-type(3){
+
+                    &:nth-of-type(3) {
                         color: #E3D700;
                     }
-                    i{
+
+                    i {
                         font-size: 25px;
                     }
                 }
             }
         }
-        .inscription2{
+
+        .inscription2 {
             display: none;
         }
-        .active{
+
+        .active {
             display: inline-block;
         }
     }
 }
-.active{
+
+.active {
     display: inline-block;
 }

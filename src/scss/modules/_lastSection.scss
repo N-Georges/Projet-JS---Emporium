@@ -1,9 +1,10 @@
-.lastCard{
-    .container-fluid{
-        .row{
+.lastCard {
+    .container-fluid {
+        .row {
             display: flex;
             justify-content: space-evenly;
-            .card{
+
+            .card {
                 text-align: center;
                 border: none;
                 display: flex;
@@ -13,40 +14,49 @@
                 height: 300px;
                 width: 400px;
                 padding: 0 10px;
-                button{
+
+                button {
                     border: none;
                     border-radius: 3px;
                     padding: 5px 10px;
                     color: #fff;
                     font-size: 13px;
                 }
-                .btnBlack{
+
+                .btnBlack {
                     background-color: #373737;
                 }
-                .btnWhite{
+
+                .btnWhite {
                     background-color: #fff;
                     color: #373737;
                 }
-                .icon{
+
+                .icon {
                     font-size: 30px;
                 }
-                .title{
+
+                .title {
                     font-weight: 600;
                 }
             }
-            .rougeBg{
+
+            .rougeBg {
                 background-color: $rougeGlobal;
                 color: #fff;
             }
-            .white{
+
+            .white {
                 background-color: $gris3;
-                .content{
+
+                .content {
                     color: $gris2;
                 }
             }
-            .red{
+
+            .red {
                 background: red;
-                
+
             }
         }
     }

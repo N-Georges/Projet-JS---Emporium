@@ -1,4 +1,4 @@
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +8,14 @@
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    .content{
-        p{
+
+    .content {
+        p {
             color: #fff;
             font-size: 45px;
         }
-        button{
+
+        button {
             background-color: $rougeGlobal;
             border: none;
             border-radius: 3px;

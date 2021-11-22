@@ -1,10 +1,12 @@
 header {
     position: relative;
+
     .logoscale {
         height: 30px;
         display: flex;
         justify-content: center;
         margin: 0;
+
         @media screen and (max-width: 774px) {
             display: flex;
             justify-content: flex-start;
@@ -26,6 +28,7 @@ header {
         display: flex;
         justify-content: center;
         margin: 30px 0;
+
         img {
             width: 200px;
         }
@@ -33,13 +36,16 @@ header {
 
     nav {
         position: relative;
+
         @media screen and (max-width:772px) {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 90px;
         }
+
         width: 100%;
+
         .logo {
             @media screen and (max-width:772px) {
                 display: flex;
@@ -125,6 +131,7 @@ header {
                     margin: 0;
                     font-size: 10px;
                 }
+
                 .light-mode {
                     background-color: black;
                     color: white;
@@ -180,19 +187,22 @@ header {
         top: 80%;
         right: 0;
         animation: navbar 1.5s;
+
         @keyframes navbar {
             from {
                 transform: translateX(100%);
             }
-            
+
             to {
                 right: 0%;
                 transform: translateX(0%);
             }
         }
+
         @media screen and (min-width:772px) {
             display: none;
         }
+
         @media screen and (max-width:772px) {
             display: none;
             padding: 15px 10px;
@@ -203,6 +213,7 @@ header {
             top: 80%;
             right: 0;
             animation: navbar 1s;
+
             li {
                 margin-bottom: 20px;
             }
@@ -211,13 +222,16 @@ header {
 
     .toggleBurger {
         cursor: pointer;
+
         i {
             font-size: 35px;
             margin-right: 20px;
         }
+
         @media screen and (min-width:772px) {
             display: none;
         }
+
         @media screen and (max-width: 774px) {
             display: flex;
             justify-content: flex-start;

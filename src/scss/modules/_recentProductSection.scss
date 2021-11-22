@@ -1,18 +1,21 @@
-.recentsProduct{
-    .btnCard{
+.recentsProduct {
+    .btnCard {
         position: absolute;
         bottom: 0;
         width: 100%;
         display: flex;
         visibility: hidden;
-        button{
+
+        button {
             width: 50%;
             height: 60px;
         }
     }
-    .container{
+
+    .container {
         width: 100%;
-        .sale{
+
+        .sale {
             position: absolute;
             left: 10%;
             display: flex;
@@ -25,24 +28,28 @@
             font-size: 10px;
             color: #fff;
         }
-        .content{
+
+        .content {
             position: relative;
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             font-weight: 600;
-            span:nth-of-type(2){
+
+            span:nth-of-type(2) {
                 color: $rougeGlobal;
                 font-size: 12px;
-            } 
-            .ancienPrix{
+            }
+
+            .ancienPrix {
                 color: $gris;
                 margin-right: 3px;
                 text-decoration: line-through;
-            }           
+            }
         }
-        .card{
+
+        .card {
             transition: 0.5s;
             height: 350px;
             width: 330px;
@@ -51,31 +58,45 @@
             padding-bottom: 50px;
             margin-right: 10px;
             cursor: pointer;
-            &:hover .btnCard{
+
+            &:hover .btnCard {
                 visibility: visible;
-                animation: carre 1.5s ease-in-out;               
+                animation: carre 1.5s ease-in-out;
             }
-            @keyframes carre{
-                0%{bottom: -10px;}
-                50%{bottom: 10px;}
-                100%{bottom: 0px;}
-              }
+
+            @keyframes carre {
+                0% {
+                    bottom: -10px;
+                }
+
+                50% {
+                    bottom: 10px;
+                }
+
+                100% {
+                    bottom: 0px;
+                }
+            }
         }
-        .setup{
+
+        .setup {
             border-radius: 5px;
         }
-        .row{
+
+        .row {
             margin: 50px 0px;
             display: flex;
             justify-content: center;
-            .title{
+
+            .title {
                 text-align: center;
                 font-size: 25px;
                 font-weight: 600;
             }
+
             // row 1
-            .cardLSofa{
-                .luxurySofa{
+            .cardLSofa {
+                .luxurySofa {
                     position: relative;
                     background: url(../img/products_mini/product-luxury-sofa.jpg);
                     background-size: cover;
@@ -83,8 +104,9 @@
                     height: 100%;
                 }
             }
-            .cardGloves{
-                .gloves{
+
+            .cardGloves {
+                .gloves {
                     position: relative;
                     background: url(../img/products_mini/product-gloves.jpg);
                     background-size: cover;
@@ -92,8 +114,9 @@
                     height: 100%;
                 }
             }
-            .cardBowl{
-                .bowl{
+
+            .cardBowl {
+                .bowl {
                     position: relative;
                     background: url(../img/products_mini/product-cups.jpg);
                     background-size: cover;
@@ -101,9 +124,10 @@
                     height: 100%;
                 }
             }
+
             // row 2
-            .cardBag{
-                .Bag{
+            .cardBag {
+                .Bag {
                     position: relative;
                     background: url(../img/products_mini/product-bag.jpg);
                     background-size: cover;
@@ -111,8 +135,9 @@
                     height: 100%;
                 }
             }
-            .cardTshirt{
-                .Tshirt{
+
+            .cardTshirt {
+                .Tshirt {
                     position: relative;
                     background: url(../img/products_mini/product-tshirt.jpg);
                     background-size: cover;
@@ -120,8 +145,9 @@
                     height: 100%;
                 }
             }
-            .cardSet{
-                .set{
+
+            .cardSet {
+                .set {
                     position: relative;
                     background: url(../img/products_mini/product-plates.jpg);
                     background-size: cover;
@@ -129,9 +155,10 @@
                     height: 100%;
                 }
             }
+
             // row 3 
-            .cardMSofa{
-                .Sofa{
+            .cardMSofa {
+                .Sofa {
                     position: relative;
                     background: url(../img/products_mini/product-modern-sofa.jpg);
                     background-size: cover;
@@ -139,8 +166,9 @@
                     height: 100%;
                 }
             }
-            .cardBed{
-                .bed{
+
+            .cardBed {
+                .bed {
                     position: relative;
                     background: url(../img/products_mini/product-bed.jpg);
                     background-size: cover;
@@ -148,8 +176,9 @@
                     height: 100%;
                 }
             }
-            .cardShoes{
-                .shoes{
+
+            .cardShoes {
+                .shoes {
                     position: relative;
                     background: url(../img/products_mini/product-shoes.jpg);
                     background-size: cover;

@@ -1,30 +1,37 @@
-.firstSection{
+.firstSection {
     @media screen and (max-width:620px) {
         flex-wrap: wrap;
     }
+
     background-color: $gris3;
     display: flex;
     width: 100%;
-    .content{
+
+    .content {
         width: 100vw;
         padding: 90px 0;
         padding-left: 150px;
+
         @media screen and (max-width:620px) {
             padding: 90px 20px;
             text-align: center;
         }
-        span{
+
+        span {
             color: $rougeGlobal;
             font-size: 50px;
         }
-        img{
+
+        img {
             height: 80px;
             width: 100%;
         }
-        p{
+
+        p {
             color: $gris2;
         }
-        .saleItems{
+
+        .saleItems {
             color: #fff;
             font-size: 10px;
             height: 40px;
@@ -35,15 +42,15 @@
             cursor: pointer;
         }
     }
-    .outfit{
-        width: 100vw;
-        @media screen and (max-width:1024px) {
 
-        }
-        img{
+    .outfit {
+        width: 100vw;
+
+        @media screen and (max-width:1024px) {}
+
+        img {
             height: 450px;
             width: 100%;
         }
     }
 }
-

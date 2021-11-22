@@ -1,19 +1,23 @@
-.twoSection{
-    .row{
+.twoSection {
+    .row {
         width: 100%;
         justify-content: space-around;
         margin: 50px 0;
         margin-bottom: 100px;
-        .card1{
+
+        .card1 {
             background: url(../img/services/service-1.jpg) center;
         }
-        .card2{
+
+        .card2 {
             background: url(../img/services/service-2.jpg)no-repeat center bottom;
         }
-        .card3{
-            background: url(../img/services/slider-3.jpg) no-repeat right top ;
+
+        .card3 {
+            background: url(../img/services/slider-3.jpg) no-repeat right top;
         }
-        .card{
+
+        .card {
             border: none;
             background-repeat: no-repeat;
             position: relative;
@@ -24,20 +28,23 @@
             width: 400px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             cursor: pointer;
+
             @media screen and (max-width:620px) {
                 margin-bottom: 30px;
             }
-            span{
+
+            span {
                 color: #fff;
                 font-size: 30px;
             }
-            hr{
+
+            hr {
                 top: 55%;
                 position: absolute;
                 width: 70%;
                 background-color: #fff;
                 height: 2px;
-                
+
             }
         }
     }
